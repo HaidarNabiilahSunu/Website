@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.3)),url(time\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%; 
+    width: 100%;
+    margin: auto;
+}
+.logo{
+    width: 140px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    position: relative;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase; 
+}
+
+.back{
+    width: 200px;
+    padding: 8px 20px; 
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #fa8072;
+    background: #fa8072;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.register-btn{
+    text-decoration: none;
+    color: #fff;
+    text-transform: unset; 
+}
+.next{
+    background: #fa8072;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 200%;
+}
+button:hover{
+    border: none;
+    background: rgba(214, 86, 64, 1);;
+}
+
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    background: #fa8072;
+    width: 110px;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -12px;
+    border-radius: 2px;    
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+.quotes{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 15%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.quotes h2{
+    font-size: 45px;
+    margin-top: 10px;
+    font-weight: 500;
+}

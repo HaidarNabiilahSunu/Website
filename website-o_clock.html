@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>BirdWings a Time of World - Easy Tutorials</title>
+        <link rel="stylesheet" href="08-style.css">
+        <script src="https://kit.fontawasesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <img src="logo (02).png" width="250" height="100" class="logo">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Popular Places</a></li>
+                    <li><a href="website-hotel.html" class="active">Travel Hotel</a></li>
+                    <li><a href="website-o'clock.html" class="active">World Time</a></li>
+                </ul>
+                <button class="back"><a href="website-profil.html" class="register-btn"><span class="next"></span>YOUR PROFILE</a></button>
+            </nav>
+            <div class="container">
+                <h1 id="current-time"></h1>
+                <div class="quotes">
+                    <p><b>TODAY'S QUOTES ... !</b></p>
+                    <br><h4>"<i>Every second that passes brings us closer to the end of our journey on this earth. 
+                        <br>Time, like flowing water, never stops. It is important for us to reflect, plan and appreciate every moment we have, 
+                        <br>because time is a valuable lesson about life that will die.</i>"</h4>
+                </div>
+            </div>
+            <script>
+                let time = document.getElementById("current-time");
+                setInterval(() =>{
+                    let d = new Date();
+                    time.innerHTML = d.toLocaleTimeString();
+                },1000)
+            </script>
+            </div>
+        </div>
+    </body>
+</html>
